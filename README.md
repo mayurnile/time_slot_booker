@@ -56,11 +56,13 @@
 - Application in 'Offline Mode'
 <br><br>
 <img src = "assets/media/animation-offline.gif" height = 512>
+
 #### In this mode all the recorded data is been stored locally on device using 'shared_preferences' package.
 
 - Application in 'Online Mode'
 <br><br>
 <img src = "assets/media/animation-online.gif" height = 512>
+
 #### Here in this case Cloud Firestore is been used to store the recorded data.
 
 # Try it Yourself
@@ -93,4 +95,4 @@ Mayur Nile - [Linkedin](https://www.linkedin.com/in/mayurnile/) - mayurnile95@gm
 
 More of My Projects - [GitHub Profile](https://github.com/mayurnile/)
 
-Project Link - [https://github.com/mayurnile/konnect](https://github.com/mayurnile/konnect)
+Project Link - [https://github.com/mayurnile/time_slot_booker](https://github.com/mayurnile/time_slot_booker)
