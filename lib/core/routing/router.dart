@@ -17,6 +17,16 @@ Route<dynamic> generateRoute(RouteSettings settings) {
         ),
         settings,
       );
+    case PHOTO_GALLERY_ROUTE:
+      return _getPageRoute(PhotoGalleryScreen(), settings);
+    case IMAGE_DISPLAY_ROUTE:
+      Map<String, dynamic> args = settings.arguments as Map<String, dynamic>;
+      return _getPageRoute(
+        ImageDisplayScreen(
+          imageFile: args['image_file'],
+        ),
+        settings,
+      );
     default:
       return _getPageRoute(HomeScreen(), settings);
   }

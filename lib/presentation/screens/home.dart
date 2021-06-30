@@ -1,8 +1,10 @@
 import 'package:get/get.dart';
 import 'package:flutter/material.dart';
+import 'package:photo_manager/photo_manager.dart';
 
 import '../widgets/widgets.dart';
 import '../../core/core.dart';
+import '../../di/locator.dart';
 import '../../providers/providers.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -19,6 +21,7 @@ class HomeScreen extends StatelessWidget {
         backgroundColor: Colors.transparent,
         elevation: 0.0,
       ),
+      floatingActionButton: _buildFloatingActionButton(),
       body: SafeArea(
         child: GetBuilder<TimeSlotsProvider>(
           initState: (_) {
@@ -145,6 +148,22 @@ class HomeScreen extends StatelessWidget {
           child: Text(_timeSlotsProvider.errorMessage),
         ),
       ],
+    );
+  }
+
+  ///[Returns a FAB which takes to gallery screen]
+  Widget _buildFloatingActionButton() {
+    return FloatingActionButton(
+      onPressed: () async {
+        final permitted = await PhotoManager.requestPermission();
+        if (!permitted) return;
+
+        locator.get<NavigationService>().navigateToNamed(PHOTO_GALLERY_ROUTE);
+      },
+      child: Icon(
+        Icons.photo_album,
+        color: Colors.white,
+      ),
     );
   }
 }

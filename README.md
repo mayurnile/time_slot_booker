@@ -66,7 +66,7 @@
 #### Here in this case Cloud Firestore is been used to store the recorded data.
 
 # Try it Yourself
-### You can try this app by installing it on your device. Here is the link for the app to download -> [Click here to Download!](https://drive.google.com/file/d/15Yb1O6SotoSByBeLlddaDdPc2TPWLtuO/view?usp=sharing)
+### You can try this app by installing it on your device. Here is the link for the app to download -> [Click here to Download!](https://drive.google.com/file/d/1lETQgQP0ez-9o-szD68J2jzNGGDp3_hq/view?usp=sharing)
 <br><br>
 
 # How can you use it ?
